@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-if __name == '__main__':
+if __name__ == "__main__":
     import sys, math
-    result = o
-    for i in sys.argv:
+    result = 0
+    for i in sys.argv[1:]:
         result += int(i)
-    print("{}".format(result))    
+        print("{}".format(result))
+
