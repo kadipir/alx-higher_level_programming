@@ -1,4 +1,3 @@
-guillaume@ubuntu:~/0x05$ cat 0-main.py
 #!/usr/bin/python3
 safe_print_list = __import__('0-safe_print_list').safe_print_list
 
