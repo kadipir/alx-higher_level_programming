@@ -1,1 +1,1 @@
-EXCEPTIONS AND ERROR HANDLING
+ Objects, Scopes and Closures 
