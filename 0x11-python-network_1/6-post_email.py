@@ -7,5 +7,5 @@ if __name__ == '__main__':
 
     url = argv[1]
     email = argv[2]
-    res = request.post(url, {'email': email})
+    res = request.post(url, data = {'email': email})
     print(res.text)
