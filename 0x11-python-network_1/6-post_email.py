@@ -3,9 +3,9 @@
 
 if __name__ == '__main__':
     from sys import argv
-    from requests import post
+    import requests
 
     url = argv[1]
     email = argv[2]
-    res = post(url, {'email': email})
+    res = request.post(url, {'email': email})
     print(res.text)
