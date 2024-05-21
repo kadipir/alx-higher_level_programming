@@ -14,6 +14,9 @@ class Rectangle:
         width: The width of rectangle
         height: The height of rectangle
         __init__(self, width=0, height=0)
+        area: The rectangle area
+        perimeter: The rectangle perimeter
+        __str__: Print the rectangle
 
     Raise:
         TypeError: width must be an integer
@@ -87,6 +90,14 @@ class Rectangle:
 
     def perimeter(self):
         """This returns the perimeter of the rectangle"""
-        if self.__width == 0 or self.__height == 0:
-            return 0
         return 2 * (self.__width + self.__height)
+
+    def __str__(self):
+        """This prints the rectangle"""
+
+        if self.__width == 0 or self.__height == 0:
+            return ""
+        display = '\n'.join(["#" * self.__width for i in range(self.__height)])
+
+
+        return display
