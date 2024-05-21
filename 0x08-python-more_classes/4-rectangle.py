@@ -17,7 +17,7 @@ class Rectangle:
         area: The rectangle area
         perimeter: The rectangle perimeter
         __str__: Print the rectangle
-
+        __repr__: Return string representation of the rectangle
     Raise:
         TypeError: width must be an integer
         ValueError: width must be >= 0
@@ -97,6 +97,10 @@ class Rectangle:
 
         if self.__width == 0 or self.__height == 0:
             return ""
-         display = '\n'.join(["#" * self.__width for i in range(self.__height)])
+        display = '\n'.join(["#" * self.__width for i in range(self.__height)])
 
         return display
+
+    def __repr__(self):
+        """Return string representation of the rectangle"""
+        return "Rectangle({:d}, {:d})".format(self.width, self.height)
